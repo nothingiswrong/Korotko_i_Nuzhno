@@ -1,6 +1,9 @@
-package com.cgvsu.model;
+package com.cgvsu.scene.model;
+
 import com.cgvsu.math.Vector2f;
 import com.cgvsu.math.Vector3f;
+import com.cgvsu.util.IObservable;
+import com.cgvsu.util.IObserver;
 
 import java.util.*;
 
@@ -10,4 +13,6 @@ public class Model {
     public ArrayList<Vector2f> textureVertices = new ArrayList<Vector2f>();
     public ArrayList<Vector3f> normals = new ArrayList<Vector3f>();
     public ArrayList<Polygon> polygons = new ArrayList<Polygon>();
+
+    public ArrayList<IObserver> observers = new ArrayList<>();
 }
